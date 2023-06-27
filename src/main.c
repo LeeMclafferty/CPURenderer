@@ -102,6 +102,19 @@ void draw_grid(uint32_t color)
 	}
 }
 
+void draw_rect(int x_pos, int y_pos, int width, int height, uint32_t color)
+{
+	for (int i = 0; i < height; i++) // rows
+	{
+		for (int j = 0; j < width; j++) // columns
+		{
+			//Use passed in position as an offset to draw rectangle.
+			int current_pos = ((i + y_pos) * window_width) + (j + x_pos);
+			color_buffer[current_pos] = color;
+		}
+	}
+}
+
 /*Color buffer is not actually displayed, it will be moved to an SDL_Texture to be displayed.*/
 void clear_color_buffer(uint32_t color)
 {
@@ -120,6 +133,7 @@ void render(void)
 	SDL_RenderClear(renderer);
 
 	draw_grid(0xFF333333);
+	draw_rect(300, 200, 150, 100, 0xFF234400);
 	render_color_buffer();
 
 	clear_color_buffer(0xFF000000);
