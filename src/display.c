@@ -95,3 +95,9 @@ void draw_rect(int x_pos, int y_pos, int width, int height, uint32_t color)
 		}
 	}
 }
+
+void draw_pixel(int x_pos, int y_pos, uint32_t color)
+{
+	if(x_pos < window_width && y_pos < window_height)
+		color_buffer[(window_width * y_pos) + x_pos] = color;
+}
