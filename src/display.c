@@ -90,14 +90,17 @@ void draw_rect(int x_pos, int y_pos, int width, int height, uint32_t color)
 		for (int j = 0; j < width; j++) // columns
 		{
 			//Use passed in position as an offset to draw rectangle.
-			int current_pos = ((i + y_pos) * window_width) + (j + x_pos);
-			color_buffer[current_pos] = color;
+			int x = x_pos + i;
+			int y = y_pos + j;
+			draw_pixel(x, y, color);
 		}
 	}
 }
 
 void draw_pixel(int x_pos, int y_pos, uint32_t color)
 {
-	if(x_pos < window_width && y_pos < window_height)
+	if (x_pos >= 0 && y_pos >= 0 && x_pos < window_width && y_pos < window_height)
+	{
 		color_buffer[(window_width * y_pos) + x_pos] = color;
+	}
 }
