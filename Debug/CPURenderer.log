@@ -1,4 +1,8 @@
 ﻿  main.c
-D:\Code\CPURenderer\src\main.c(102,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-D:\Code\CPURenderer\src\main.c(102,76): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(120,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(120,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(121,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(121,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(122,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(122,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
   CPURenderer.vcxproj -> D:\Code\CPURenderer\Debug\CPURenderer.exe
