@@ -1,8 +1,14 @@
 ﻿  main.c
-D:\Code\CPURenderer\src\main.c(120,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-D:\Code\CPURenderer\src\main.c(120,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 D:\Code\CPURenderer\src\main.c(121,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 D:\Code\CPURenderer\src\main.c(121,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 D:\Code\CPURenderer\src\main.c(122,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 D:\Code\CPURenderer\src\main.c(122,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(123,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(123,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(142,4): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(142,16): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(143,4): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(143,16): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+D:\Code\CPURenderer\src\main.c(144,4): warning C4244: 'function': conversion from 'double' to 'uint32_t', possible loss of data
+D:\Code\CPURenderer\src\main.c(144,16): warning C4020: 'draw_triangle': too many actual parameters
   CPURenderer.vcxproj -> D:\Code\CPURenderer\Debug\CPURenderer.exe

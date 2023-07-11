@@ -104,3 +104,37 @@ void draw_pixel(int x_pos, int y_pos, uint32_t color)
 		color_buffer[(window_width * y_pos) + x_pos] = color;
 	}
 }
+
+void draw_line(int x0, int y0, int x1, int y1, uint32_t color)
+{
+	// Get change in y and change in x (rise and run)
+	int delta_x = x1 - x0;
+	int delta_y = y1 - y0;
+
+	// Get the longer side of a right triangle made by the line.
+	int longest_side = (abs(delta_x) >= abs(delta_y)) ? abs(delta_x) : abs(delta_y);
+	
+	// get the amount to increment each iteration by
+	float x_inc = delta_x / (float)longest_side;
+	float y_inc = delta_y / (float)longest_side;
+
+	float current_x = x0;
+	float current_y = y0;
+
+	// increment and draw pixel until line has traveled as far as the longest side. 
+	for (int i = 0; i <= longest_side; i++)
+	{
+		draw_pixel(round(current_x), round(current_y), color);
+		current_x += x_inc;
+		current_y += y_inc;
+	}
+
+}
+
+void draw_triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t color)
+{
+
+	draw_line(x0, y0, x1, y1, 0xFFFF0000);
+	draw_line(x1, y1, x2, y2, 0xFF00FF00);
+	draw_line(x2, y2, x0, y0, 0xFF0000FF);
+}
